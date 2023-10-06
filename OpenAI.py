@@ -5,7 +5,7 @@ def open_ai_response():
   config = dotenv.dotenv_values(".env")
   openai.api_key = config['OPENAI_API_KEY']
 
-  #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
+
   response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[
