@@ -6,14 +6,16 @@ from Prompt import prompt
 
 app= Flask(__name__)
 topic=random.choice(get_it_concepts_with_subtopics())
-concept=topic["concpet"]
+# concept=topic["concpet"]
 subtopic=topic["subtopic"]
 
 #create the prompt object, pass concept and subtopic as arguments
+prompt = prompt(subtopic=subtopic)
 
 
 
-#get the data
+#get the data and divide the data properly
+
 
 
 
