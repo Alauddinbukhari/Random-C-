@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>IT Concept</title>
 </head>
 <body>
+<h1>{{ subtopic_name }}</h1>
 <p>Hello</p>
+{% for section in concept_parts %}
+    <h1>{{ section["title"] }}</h1> <br>
+    <p>{{ section["content"] }}</p>
+{% endfor %}
 </body>
 </html>
